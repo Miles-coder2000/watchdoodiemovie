@@ -1,6 +1,8 @@
 const API_KEY = import.meta.env.VITE_TMDB_API;
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
+
+
 /**
  * Fetch content by genre
  */

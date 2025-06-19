@@ -50,7 +50,10 @@ const VideoPlayer = ({ tvId, season = 1, episode = 1 }) => {
     window.removeEventListener('blur', handleWindowBlur);
   }, []);
 
-  const iframeSrc = `https://vidsrc.dev/embed/tv/${tvId}/${season}/${episode}`;
+
+  
+
+const iframeSrc = `https://vidlink.pro/tv/${tvId}/${season}/${episode}`;
 
   return (
     <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
@@ -60,7 +63,7 @@ const VideoPlayer = ({ tvId, season = 1, episode = 1 }) => {
         allowFullScreen
         title="Series Stream"
         loading="lazy"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-presentation"
+        //sandbox="allow-scripts allow-same-origin allow-forms allow-presentation"
         referrerPolicy="no-referrer"
         className="absolute top-0 left-0   w-full h-[50vh] sm:h-[30vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] rounded shadow-lg mb-3"
         style={{

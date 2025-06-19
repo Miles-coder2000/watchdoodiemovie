@@ -52,6 +52,16 @@ const VideoPlayer = ({ movieId }) => {
       });
     };
 
+    window.addEventListener('message', (event) => {
+  if (event.origin !== 'https://vidlink.pro') return;
+  
+  if (event.data?.type === 'MEDIA_DATA') {
+    const mediaData = event.data.data;
+    localStorage.setItem('vidLinkProgress', JSON.stringify(mediaData));
+  }
+});
+
+
     window.addEventListener('contextmenu', disableContextMenu);
     window.addEventListener('blur', handleWindowBlur);
     document.addEventListener('click', handleClickEvent, true);
@@ -68,7 +78,7 @@ const VideoPlayer = ({ movieId }) => {
 
   if (!movieId) return null;
 
-  const iframeSrc = `https://vidsrc.dev/embed/movie/${movieId}`;
+const iframeSrc = `https://vidlink.pro/movie/${movieId}`;
 
   return (
     <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
@@ -78,7 +88,7 @@ const VideoPlayer = ({ movieId }) => {
         allowFullScreen
         title="Series Stream"
         loading="lazy"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-presentation"
+        //sandbox="allow-scripts allow-same-origin allow-forms allow-presentation"
         referrerPolicy="no-referrer"
         className="absolute top-0 left-0   w-full h-[50vh] sm:h-[30vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] rounded shadow-lg mb-3"
         style={{
