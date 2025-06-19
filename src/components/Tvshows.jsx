@@ -14,7 +14,7 @@ export const Tvshows = () => {
   const [page, setpage] = useState(1);
   const [hasMore, sethasMore] = useState(true);
 
-  document.title = "THE ULTIMATE | tv Shows " + category.toUpperCase();
+  document.title = "WatchDoodie | TV Shows " + category.toUpperCase();
 
   const GetTv = async () => {
     try {

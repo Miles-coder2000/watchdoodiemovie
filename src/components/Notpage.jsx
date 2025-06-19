@@ -13,7 +13,7 @@ const Notpage = () => {
       <h1 className="text-red-500 font-black">Page Not Found</h1>
       <p className="text-red-400 font-semibold">
         The page you are looking for does not exist. Please go back to the
-        homepage or use the search bar to find what you are looking for. This was a mistake, please press the close button once.
+        homepage or press the close button once to proceed.
       </p>
       <img className="rounded-lg" src={img} alt="" />
     </div>
