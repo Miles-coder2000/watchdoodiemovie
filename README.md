@@ -92,8 +92,51 @@ This project is licensed under the MIT License. Feel free to use the code as you
 ## Contact
 
 If you have any questions or just want to chat, feel free to reach out:
-- **GitHub**: [Debronejacobs](https://github.com/Debronejacobs)
-- **Email**: seanjacob283@gmail.com
+- **GitHub**: [Debronejacobs](https://github.com/Miles-coder200)
+- **Email**: mileslandersotelogarcia@gmail.com
 
 ---
 Thank you for checking out my project! I hope you find it as fun to use as I did to create. 😊
+## Project Structure
+
+```
+watchdoodiemovie/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env
+├── package.json
+└── tailwind.config.js
+```
+
+- **`src/components/`**: Reusable UI components (e.g., Navbar, MovieCard, SearchBar).
+- **`src/pages/`**: Main pages (Home, Movie Details, TV Shows, etc.).
+- **`src/assets/`**: Images and static assets.
+- **`App.jsx`**: Main app component with routing.
+- **`main.jsx`**: Entry point for React.
+- **`index.css`**: Tailwind and global styles.
+
+## Environment Variables
+
+Make sure your `.env` file is set up as described above. The app uses [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api) for fetching movie and TV data.
+
+## Folder Highlights
+
+- **Home Page**: Displays trending movies and TV shows.
+- **Search**: Lets users search for movies and TV series.
+- **Details Pages**: Show detailed info, trailers, and recommendations.
+- **Responsive Layout**: Optimized for all screen sizes.
+
+## Acknowledgements
+
+- [TMDB API](https://www.themoviedb.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
