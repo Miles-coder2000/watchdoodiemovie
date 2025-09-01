@@ -289,12 +289,12 @@ const MovieDetails = () => {
         <Outlet/>
       </div>
       <div className="flex  gap-3 text-2xl text-white  ">
-          <h1>MADE BY ❤️ HARSH PATEL</h1>
+          <h1>MADE BY ❤️ MILES</h1>
           <a
             target="_blank"
-            href="https://www.instagram.com/patelharsh.in/"
+            href="https://www.facebook.com/miles.garcia26"
           >
-            <i className=" ri-instagram-fill"></i>
+            <i className="ri-facebook-fill"></i>
           </a>
         </div>
     </div>

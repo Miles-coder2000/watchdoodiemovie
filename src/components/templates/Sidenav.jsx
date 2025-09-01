@@ -40,7 +40,7 @@ export const Sidenav = ({menuset}) => {
            </Link>
         </nav>
         <div className="flex gap-3 text-sm  ">
-          <h1>Made by ❤️ Miles</h1>
+          <h1>MADE BY ❤️ MILES</h1>
           <a
             target="_blank"
             href="https://www.facebook.com/miles.garcia26"
